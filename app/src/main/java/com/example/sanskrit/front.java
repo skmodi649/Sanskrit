@@ -14,9 +14,6 @@ public class front extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_front);
-        MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.appbgm);
-        mediaPlayer.start();
-        mediaPlayer.setLooping(true);
     }
 
     public void gogo(View view) {
