@@ -3,9 +3,7 @@ package com.example.sanskrit;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
 
 public class front extends AppCompatActivity {
@@ -20,12 +18,4 @@ public class front extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-    public void fur(View view){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.appbgm);
-        mediaPlayer.start();
-    }
-       public void fura(View view){
-           MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.appbgm);
-           mediaPlayer.stop();
-       }
 }
