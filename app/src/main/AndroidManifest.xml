@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sanskrit">
         <activity
-            android:name=".Login_Activity"
+            android:name=".front"
             android:exported="true" />
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".NumbersClickListener" />
@@ -35,7 +35,7 @@
             android:label="Numbers"
             android:launchMode="singleTop"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".front">
+        <activity android:name=".Login_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
