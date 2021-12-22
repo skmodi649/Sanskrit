@@ -15,4 +15,8 @@
     <string name="category_family">Family Members</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="email">email</string>
+    <string name="about_us">About Us</string>
+    <string name="login">login</string>
+    <string name="signup">signup</string>
 </resources>
