@@ -11,9 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sanskrit">
         <activity
+            android:name=".Register_Activity"
+            android:exported="true" />
+        <activity
             android:name=".front"
             android:exported="true" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".NumbersClickListener" />
         <activity
             android:name=".FamilyActivity"
