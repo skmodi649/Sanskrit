@@ -75,15 +75,27 @@
 
     <TextView
         android:id="@+id/signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="175dp"
+        android:layout_width="114dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="164dp"
+        android:onClick="register"
         android:text="Not Registered?"
         android:textStyle="bold"
-        android:onClick="register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="168dp"
+        android:text="Forgot password"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toEndOf="@+id/signup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
