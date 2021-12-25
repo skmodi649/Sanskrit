@@ -32,7 +32,7 @@
         android:layout_height="0dp"
         android:layout_marginBottom="340dp"
         android:ems="10"
-        android:hint="@string/email"
+        android:hint="@string/name"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:padding="3dp"

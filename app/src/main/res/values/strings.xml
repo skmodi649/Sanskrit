@@ -19,4 +19,5 @@
     <string name="about_us">About Us</string>
     <string name="login">login</string>
     <string name="signup">signup</string>
+    <string name="name">Name</string>
 </resources>
