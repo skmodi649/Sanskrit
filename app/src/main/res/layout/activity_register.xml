@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#777E93"
+    android:background="#232735"
     tools:context=".Register_Activity">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -16,7 +16,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background="#FF777E93"
+        android:background="#FF232735"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/name"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,8 +37,8 @@
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:padding="3dp"
-        android:textColor="#000000"
-        android:textColorHint="#2C3224"
+        android:textColor="#FFE3D2D2"
+        android:textColorHint="#757773"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +53,8 @@
         android:inputType="number"
         android:minHeight="48dp"
         android:text="Age"
+        android:textColor="#FFE3D2D2"
+        android:textColorHint="#FF757773"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -66,6 +68,8 @@
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:text="Email address"
+        android:textColor="#FFE3D2D2"
+        android:textColorHint="#FF757773"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/age" />
@@ -79,6 +83,8 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:text="Password"
+        android:textColor="#FFE3D2D2"
+        android:textColorHint="#FF757773"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email" />
