@@ -45,16 +45,29 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/age"
         android:layout_width="375dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         android:text="Age"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="375dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
