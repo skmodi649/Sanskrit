@@ -75,12 +75,11 @@
         app:layout_constraintTop_toBottomOf="@+id/age" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/password"
         android:layout_width="375dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:minHeight="48dp"
         android:text="Password"
         android:textColor="#FFE3D2D2"
