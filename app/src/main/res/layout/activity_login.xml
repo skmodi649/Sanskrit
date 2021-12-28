@@ -30,7 +30,7 @@
         android:id="@+id/email"
         android:layout_width="375dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="340dp"
+        android:layout_marginBottom="330dp"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
