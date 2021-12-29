@@ -80,7 +80,7 @@
         android:layout_height="0dp"
         android:ems="10"
         android:hint="@string/password"
-        android:inputType="textPersonName"
+        android:inputType="textVisiblePassword"
         android:textColor="#FFE3D2D2"
         android:textColorHint="#757773"
         app:layout_constraintEnd_toEndOf="parent"
