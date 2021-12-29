@@ -42,7 +42,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="Autofill,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/email"
@@ -57,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="Autofill,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/age"
@@ -72,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="Autofill,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/password"
@@ -86,7 +86,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/age"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/register"
