@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#024E2E"
+    android:background="#4E4E87"
     tools:context=".Register_Activity">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -16,7 +16,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background="#FF024E2E"
+        android:background="#FF4E4E87"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/name"
         app:layout_constraintEnd_toEndOf="parent"
