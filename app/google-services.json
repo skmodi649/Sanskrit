@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230577356974",
+    "project_id": "sanskrit-b6d1d",
+    "storage_bucket": "sanskrit-b6d1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230577356974:android:5f9ebbea893860a95cad3f",
+        "android_client_info": {
+          "package_name": "com.example.sanskrit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230577356974-s3g0ldada96mistchq8g2b0735bvccju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYl1lBYTrUaqt2y6nflQhUi2-S3O2vggs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230577356974-s3g0ldada96mistchq8g2b0735bvccju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
