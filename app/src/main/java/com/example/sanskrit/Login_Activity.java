@@ -8,10 +8,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Login_Activity extends AppCompatActivity {
     Button login;
     TextView signup;
     EditText email , password;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,7 @@ public class Login_Activity extends AppCompatActivity {
         signup = findViewById(R.id.signup);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
+        mAuth = FirebaseAuth.getInstance();
         String emaila = email.getText().toString().trim();
         String pass = password.getText().toString().trim();
 
