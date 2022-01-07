@@ -23,4 +23,7 @@
     <string name="email_address">Email address</string>
     <string name="age">Age</string>
     <string name="register">Register</string>
+    <string name="language">LANGUAGE</string>
+    <string name="literature">LITERATURE</string>
+    <string name="epics">EPICS</string>
 </resources>
