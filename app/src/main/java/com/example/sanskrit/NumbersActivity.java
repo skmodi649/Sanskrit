@@ -6,13 +6,7 @@ import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.GridView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
 
 
 
@@ -38,12 +32,7 @@ public class NumbersActivity<itemsAdapter> extends AppCompatActivity {
              }
          }
      };
-     private final MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
-         @Override
-         public void onCompletion(MediaPlayer mp) {
-             releaseMediaPlayer();
-         }
-     };
+     private final MediaPlayer.OnCompletionListener mCompletionListener = mp -> releaseMediaPlayer();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +50,7 @@ public class NumbersActivity<itemsAdapter> extends AppCompatActivity {
 //    ArrayList<String> arr = new ArrayList<String>();
 //Now instead of passing string objects inside the arraylist we will pass Word calss objects
         //So the code will be something like this
-        ArrayList<Word> arr = new ArrayList<Word>();
+        ArrayList<Word> arr = new ArrayList<>();
 //        Word w=new Word("one","ekah");
 //        arr.add(w);
         //Now instead of doing above two commented steps we can simply put arr.add(new Word("one","eka");
@@ -81,31 +70,28 @@ public class NumbersActivity<itemsAdapter> extends AppCompatActivity {
         //Now we are using a custom arrayadapter(WordAdapter) hence we need to modify ArrayAdapter to WordAdapter and only two paramters
         // to be passed i.e this and arraylist
         WordAdapter adapter = new WordAdapter(this, arr, R.color.category_numbers);
-        ListView listview = (ListView) findViewById(com.example.sanskrit.R.id.list);
+        ListView listview = findViewById(com.example.sanskrit.R.id.list);
         listview.setAdapter(adapter);
         //Conclusion: All xml codes can be written using java codes as well
 
         //Now using the adapter to add sound files in the app
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {  // i denotes position of the word object
-                Word word = arr.get(i);  //get the link of object at given position the user is clicked on
-                //Release the media player resources as well for the song that was playing previously and
-                //also because we are about to play a different audio file
-                releaseMediaPlayer();
+        listview.setOnItemClickListener((adapterView, view, i, l) -> {  // i denotes position of the word object
+            Word word = arr.get(i);  //get the link of object at given position the user is clicked on
+            //Release the media player resources as well for the song that was playing previously and
+            //also because we are about to play a different audio file
+            releaseMediaPlayer();
 
-                //Request Audio focus for playback
-                int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
-                if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
-                    //We have audio focus now
-                    m = MediaPlayer.create(NumbersActivity.this, word.getAudioResourceId());
-                    m.start();
-                    //Setup a listener on the media player so that we can stop and release the media player once the song has
-                    //stopped playing
-                    //Instead of creating object for every audio file we have created global variable so that on object
-                    //does the work for all the items in the list for every category
-                    m.setOnCompletionListener(mCompletionListener);
-                }
+            //Request Audio focus for playback
+            int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
+            if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+                //We have audio focus now
+                m = MediaPlayer.create(NumbersActivity.this, word.getAudioResourceId());
+                m.start();
+                //Setup a listener on the media player so that we can stop and release the media player once the song has
+                //stopped playing
+                //Instead of creating object for every audio file we have created global variable so that on object
+                //does the work for all the items in the list for every category
+                m.setOnCompletionListener(mCompletionListener);
             }
         });
     }
