@@ -13,7 +13,7 @@
         android:alpha="0.75"
         android:onClick="gogo"
         android:text="@string/language"
-        android:textColor="@android:color/holo_orange_light"
+        android:textColor="#90A4AE"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:backgroundTint="@color/material_on_primary_emphasis_high_type"
