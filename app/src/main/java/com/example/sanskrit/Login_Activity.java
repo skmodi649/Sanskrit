@@ -9,7 +9,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class Login_Activity extends AppCompatActivity {
     Button login;
@@ -36,11 +35,5 @@ public class Login_Activity extends AppCompatActivity {
                 Toast.makeText(Login_Activity.this , "Invalid Credentials!" , Toast.LENGTH_LONG).show();
         });
         signup.setOnClickListener(view -> startActivity(new Intent(Login_Activity.this , Register_Activity.class)));
-    }
-    @Override
-    public void onStart(){
-        super.onStart();
-        // Checking if the user is signed in (non-null) and update the UI accordingly
-        FirebaseUser currentUser = mAuth.getCurrentUser();
     }
 }
