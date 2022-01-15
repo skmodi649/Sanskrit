@@ -26,4 +26,5 @@
     <string name="language">LANGUAGE</string>
     <string name="literature">LITERATURE</string>
     <string name="epics">EPICS</string>
+    <string name="username">Username</string>
 </resources>
